@@ -9,6 +9,7 @@ nav:
     - Dash Patterns: dash.md
     - Python: python.md
     - Git: git.md
+    - Markdown: markdown.md
 theme:
     name: material
 
