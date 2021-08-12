@@ -1,4 +1,8 @@
 site_name: Ming Coding Patterns
+site_url: https://mwang87.github.io/MingWangCodingPatterns/
+edit_uri: https://github.com/mwang87/MingWangCodingPatterns/edit/master/docs/
+repo_name: mwang87/MingWangCodingPatterns
+repo_url: https://github.com/mwang87/MingWangCodingPatterns
 
 nav:
     - Introduction: index.md
