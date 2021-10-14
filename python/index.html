@@ -237,6 +237,32 @@
     Profiling and creating a visualzaiton
   </a>
   
+    <nav class="md-nav" aria-label="Profiling and creating a visualzaiton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-utilities" class="md-nav__link">
+    Python Utilities
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Utilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-chunks-of-big-list" class="md-nav__link">
+    Creating chunks of big list
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -322,6 +348,32 @@
     Profiling and creating a visualzaiton
   </a>
   
+    <nav class="md-nav" aria-label="Profiling and creating a visualzaiton">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#python-utilities" class="md-nav__link">
+    Python Utilities
+  </a>
+  
+    <nav class="md-nav" aria-label="Python Utilities">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#creating-chunks-of-big-list" class="md-nav__link">
+    Creating chunks of big list
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -353,6 +405,16 @@
 gprof2dot -f pstats myLog.profile -o callingGraph.dot
 dot -Tsvg callingGraph.dot -o callingGraph.svg
 </code></pre></div>
+
+<h3 id="python-utilities">Python Utilities<a class="headerlink" href="#python-utilities" title="Permanent link">&para;</a></h3>
+<h4 id="creating-chunks-of-big-list">Creating chunks of big list<a class="headerlink" href="#creating-chunks-of-big-list" title="Permanent link">&para;</a></h4>
+<div class="highlight"><pre><span></span><code># Yield successive n-sized
+# chunks from l.
+def divide_chunks(l, n):
+    # looping till length l
+    for i in range(0, len(l), n): 
+        yield l[i:i + n]
+</code></pre></div>
                 
                   
                     
@@ -361,7 +423,7 @@ dot -Tsvg callingGraph.dot -o callingGraph.svg
 <div class="md-source-date">
   <small>
     
-      Last update: August 8, 2021 22:40:25
+      Last update: October 14, 2021 22:12:42
     
   </small>
 </div>
