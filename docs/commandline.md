@@ -12,4 +12,6 @@ Check the device name
 lsblk
 ```
 
-Use gparted in web browser
+Use gparted in UI
+
+
