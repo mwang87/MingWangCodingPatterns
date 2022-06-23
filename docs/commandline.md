@@ -4,6 +4,15 @@
 sudo smartctl -t short -a /dev/sda
 ```
 
+## Setup new SSD on workstation
+
+Check the device name
+
+```
+lsblk
+```
+
+Use gparted in UI
 
 ## Docker Cleanup
 
@@ -27,3 +36,6 @@ sudo rm /var/lib/docker/overlay2/* -r
 sudo systemctl start docker.socket
 sudo systemctl start docker
 ```
+
+
+
