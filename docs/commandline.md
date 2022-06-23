@@ -31,7 +31,7 @@ Clear overlay2 which is major surgery on docker
 sudo systemctl stop docker.socket
 sudo systemctl stop docker
 
-sudo rm /var/lib/docker/overlay2/* -r
+sudo rm /var/lib/docker -r
 
 sudo systemctl start docker.socket
 sudo systemctl start docker
