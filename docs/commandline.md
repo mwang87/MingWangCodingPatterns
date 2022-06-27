@@ -37,5 +37,14 @@ sudo systemctl start docker.socket
 sudo systemctl start docker
 ```
 
+## SQLITE3 Dump Resoration
 
+If you have a database corruption and need to recreate a Sqlite3 Database, you can use the following commands:
+
+```
+cat db.schema | sqlite3 database.db
+cat db.dump | | sqlite3 database.db
+```
+
+NOTE: Its important to use the schema because the ordering of the columns might not actually be correct on the original database and you'll get scrambled columns if you don't do this. 
 
