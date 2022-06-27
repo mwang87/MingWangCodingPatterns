@@ -301,6 +301,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sqlite3-dump-resoration" class="md-nav__link">
+    SQLITE3 Dump Resoration
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -352,6 +359,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#sqlite3-dump-resoration" class="md-nav__link">
+    SQLITE3 Dump Resoration
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -399,6 +413,14 @@ sudo rm /var/lib/docker -r
 sudo systemctl start docker.socket
 sudo systemctl start docker
 </code></pre></div>
+
+<h2 id="sqlite3-dump-resoration">SQLITE3 Dump Resoration<a class="headerlink" href="#sqlite3-dump-resoration" title="Permanent link">&para;</a></h2>
+<p>If you have a database corruption and need to recreate a Sqlite3 Database, you can use the following commands:</p>
+<div class="highlight"><pre><span></span><code>cat db.schema | sqlite3 database.db
+cat db.dump | | sqlite3 database.db
+</code></pre></div>
+
+<p>NOTE: Its important to use the schema because the ordering of the columns might not actually be correct on the original database and you'll get scrambled columns if you don't do this. </p>
                 
                   
                     
@@ -407,7 +429,7 @@ sudo systemctl start docker
 <div class="md-source-date">
   <small>
     
-      Last update: June 23, 2022 16:54:17
+      Last update: June 27, 2022 20:33:05
     
   </small>
 </div>
