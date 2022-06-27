@@ -287,6 +287,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#setup-new-ssd-on-workstation" class="md-nav__link">
+    Setup new SSD on workstation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-cleanup" class="md-nav__link">
+    Docker Cleanup
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -324,6 +338,20 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#setup-new-ssd-on-workstation" class="md-nav__link">
+    Setup new SSD on workstation
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#docker-cleanup" class="md-nav__link">
+    Docker Cleanup
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -349,6 +377,28 @@
                 <h2 id="determine-life-of-ssd">Determine life of SSD<a class="headerlink" href="#determine-life-of-ssd" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>sudo smartctl -t short -a /dev/sda
 </code></pre></div>
+
+<h2 id="setup-new-ssd-on-workstation">Setup new SSD on workstation<a class="headerlink" href="#setup-new-ssd-on-workstation" title="Permanent link">&para;</a></h2>
+<p>Check the device name</p>
+<div class="highlight"><pre><span></span><code>lsblk
+</code></pre></div>
+
+<p>Use gparted in UI</p>
+<h2 id="docker-cleanup">Docker Cleanup<a class="headerlink" href="#docker-cleanup" title="Permanent link">&para;</a></h2>
+<p>If docker is being annoying and creating a ton of stuff in the overlay2 folder even though docker system df is clear. To fully clear Docker do the following</p>
+<p>Clear the official documents</p>
+<div class="highlight"><pre><span></span><code>docker system clean -af
+</code></pre></div>
+
+<p>Clear overlay2 which is major surgery on docker</p>
+<div class="highlight"><pre><span></span><code>sudo systemctl stop docker.socket
+sudo systemctl stop docker
+
+sudo rm /var/lib/docker -r
+
+sudo systemctl start docker.socket
+sudo systemctl start docker
+</code></pre></div>
                 
                   
                     
@@ -357,7 +407,7 @@
 <div class="md-source-date">
   <small>
     
-      Last update: October 8, 2021 18:43:06
+      Last update: June 23, 2022 16:54:17
     
   </small>
 </div>
