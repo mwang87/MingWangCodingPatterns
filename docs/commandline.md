@@ -48,3 +48,6 @@ cat db.dump | | sqlite3 database.db
 
 NOTE: Its important to use the schema because the ordering of the columns might not actually be correct on the original database and you'll get scrambled columns if you don't do this. 
 
+## SSH Security
+
+How to disable password SSH - [link](https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/)
