@@ -51,3 +51,11 @@ NOTE: Its important to use the schema because the ordering of the columns might 
 ## SSH Security
 
 How to disable password SSH - [link](https://www.cyberciti.biz/faq/how-to-disable-ssh-password-login-on-linux/)
+
+## Change Hostname
+
+You can change the hostname of the server so the terminal names actually change. Super userful when you have a lot of servers running around
+
+```
+sudo hostnamectl set-hostname newhostname
+```
